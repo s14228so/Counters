@@ -33,10 +33,10 @@ import './index.css';
           super();
           this.state = {
             counters: [
-              {id: 'A', count: 0, color: 'tomato'},
-              {id: 'B', count: 0, color: 'skyblue'},
-              {id: 'C', count: 0, color: 'limegreen'},
-               {id: 'D', count: 0, color: 'gray'}
+              {id: '歯ブラシ', count: 0, color: 'tomato'},
+              {id: '洗顔料', count: 0, color: 'skyblue'},
+              {id: 'ボディーソープ', count: 0, color: 'limegreen'},
+               {id: 'シャンプー', count: 0, color: 'gray'}
             ],
             total: 0
 
@@ -65,7 +65,7 @@ import './index.css';
                 counters={this.state.counters}
                 countUp={this.countUp}
               />
-              <div>TOTAL INVENTORY: {this.state.total}</div>
+              <div>カートの合計: {this.state.total}個</div>
             </div>
           );
         }
